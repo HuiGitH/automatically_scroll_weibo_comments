@@ -31,7 +31,7 @@ function auto_scroll_screen(params) {
   // 设置定时器，时间即为滚动速度
   function main() {
     var element = document.documentElement;
-    if (element.scrollTop + element.clientHeight == element.scrollHeight) {
+    if (element.scrollTop + element.clientHeight >= element.scrollHeight) {
       //   clearInterval(interval);
       click_count += 1;
       console.log("已经到底部了, 总共点击次数：", String(click_count));
@@ -51,7 +51,12 @@ function auto_scroll_screen(params) {
   // 定义 interval
   interval = setInterval(main, 1000);
 }
-// document.querySelectorAll(".repeat_list .tab .S_line1 .S_txt1")[1].click();
+document.querySelectorAll(".repeat_list .tab .S_line1 .S_txt1")[1].click();
 
 auto_scroll_screen();
 show_aim_comment();
+
+// 目前问题：
+// 1. 图片太多的时候因为循环点击会很慢
+// 2. 无法控制暂停
+
