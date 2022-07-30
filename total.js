@@ -1,5 +1,10 @@
-document
-      .querySelectorAll("div[node-type] .list_li .bigcursor")
-      .forEach((element, index, array) => {
-        element.click();
-      });
+var dic = {
+  "dg": 20,
+  "2xfd": 40,
+  "zf": 30,
+  "abc": 15,
+};
+
+
+
+Object.keys(dict).sort(dict.values())
