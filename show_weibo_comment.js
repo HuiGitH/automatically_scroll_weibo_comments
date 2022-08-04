@@ -18,6 +18,7 @@
     let location_dict = {};
     let all_comment_arrays = [];
     let new_param;
+    let dad;
     let all_comment_count = 0;
 
     // 默认不移除其他元素
