@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         auto scroll screen
+// @name         自动向下刷
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  auto scroll screen in weibo website
