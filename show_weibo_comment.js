@@ -17,7 +17,9 @@
     let pattern = /.* 来自(\S+)/;
     let location_dict = {};
     let all_comment_arrays = [];
+    let new_param;
     let all_comment_count = 0;
+
     // 默认不移除其他元素
     let is_remove_other_element = false;
     // 默认每隔2秒向下刷一次
