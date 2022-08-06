@@ -17,8 +17,6 @@
     let pattern = /.* 来自(\S+)/;
     let location_dict = {};
     let all_comment_arrays = [];
-    let new_param;
-    let dad;
     let all_comment_count = 0;
 
     // 默认不移除其他元素
@@ -26,7 +24,7 @@
     // 默认每隔2秒向下刷一次
     let auto_scroll_time = 2000;
     // 向下刷高度
-    let scroll_height = 200;
+    let scroll_height = 0;
     // 自动下滑定时器
     let interval_scroll;
     let sort_by_time = true;
