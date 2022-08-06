@@ -166,6 +166,10 @@
         } else if (e.ctrlKey && e.code == "KeyG") {
             scroll_height -= 100;
             key_info = "减少每次向下刷高度到" + scroll_height;
+        } else if (e.ctrlKey && e.code == "KeyH") {
+            scroll_height -= 100;
+            key_info = "Ctrl+r 开始 Ctrl+c 停止 Ctrl+w 切换时间排序或热度排序 " +
+                "Ctrl+e 是否移除其他元素 默认不移除 Ctrl+y 增加下滑高度 Ctrl+g 减少下滑高度 Ctrl+h 提示帮组信息";
         }
 
         if (e.ctrlKey && e.code.indexOf("Key") >= 0) {
