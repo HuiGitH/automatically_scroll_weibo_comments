@@ -80,7 +80,7 @@
                         }
                     } else if (
                         element.innerText.indexOf("来自") > 0 &&
-                        index < array.length - 2 &&
+                        index < array.length &&
                         is_remove_other_element
                     ) {
                         // 移除元素
